@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg">
+
+
+    <com.slamtec.robot.deliver.customview.SettingMenuView
+        android:id="@+id/smv_setting_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_80" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_640"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_18">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:duplicateParentState="true"
+            android:src="@drawable/selector_setting_back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:duplicateParentState="true"
+            android:text="@string/back"
+            android:textColor="@drawable/selector_setting_back_color"
+            android:textSize="@dimen/dp_26" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_setting_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_211"
+        android:layout_marginTop="@dimen/dp_67" />
+
+
+</RelativeLayout>

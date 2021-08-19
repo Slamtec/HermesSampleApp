@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_540"
+    android:layout_height="@dimen/dp_288"
+    android:background="@color/transparent">
+
+    <com.slamtec.robot.deliver.customview.RoundRectBlurView
+        android:id="@+id/bv"
+        android:layout_width="@dimen/dp_540"
+        android:layout_height="@dimen/dp_288"
+        app:realtimeBlurRadius="10dp"
+        app:realtimeDownsampleFactor="4"
+        app:realtimeOverlayColor="@color/blur_bg"
+        app:xRadius="@dimen/dp_24"
+        app:yRadius="@dimen/dp_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/alert_title"
+        android:textColor="@color/black"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/tv_choose_content"
+        android:layout_width="400dp"
+        android:layout_height="@dimen/dp_196"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="@string/create_order_failed"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <View
+        android:id="@+id/v_choose_confirm_view"
+        android:layout_width="@dimen/dp_540"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_200"
+        android:background="@color/blue_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_87"
+        android:layout_below="@id/v_choose_confirm_view">
+
+        <TextView
+            android:id="@+id/tv_choose_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/back_homepage"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/dp_34" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_line" />
+
+        <TextView
+            android:id="@+id/tv_choose_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/execute_task"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/dp_34" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

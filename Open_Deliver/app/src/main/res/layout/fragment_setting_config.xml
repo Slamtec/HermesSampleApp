@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_56"
+        android:background="@drawable/shape_config_top_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_35"
+        android:text="@string/setting_state"
+        android:textColor="@color/config_black"
+        android:textSize="@dimen/dp_28" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_980"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_config_middle_bg">
+
+        <ImageView
+            android:id="@+id/iv_config_device_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:src="@drawable/setting_icon_devicesn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_21"
+            android:layout_toRightOf="@id/iv_config_device_sn"
+            android:text="@string/device_sn"
+            android:textColor="@color/config_black"
+            android:textSize="@dimen/dp_22" />
+
+        <TextView
+            android:id="@+id/tv_config_device_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_26"
+            android:text="@string/device_sn"
+            android:textColor="@color/config_grey"
+            android:textSize="@dimen/dp_22" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_980"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_config_middle_bg">
+
+        <ImageView
+            android:id="@+id/iv_config_firmware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:src="@drawable/setting_icon_firmware" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_21"
+            android:layout_toRightOf="@id/iv_config_firmware"
+            android:text="@string/firmware_version"
+            android:textColor="@color/config_black"
+            android:textSize="@dimen/dp_22" />
+
+        <TextView
+            android:id="@+id/tv_config_firmware_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_26"
+            android:text="@string/firmware_version"
+            android:textColor="@color/config_grey"
+            android:textSize="@dimen/dp_22" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_980"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_config_middle_bg">
+
+        <ImageView
+            android:id="@+id/iv_cloud_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:src="@drawable/setting_icon_property" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_21"
+            android:layout_toRightOf="@id/iv_cloud_version"
+            android:text="@string/cloud_version"
+            android:textColor="@color/config_black"
+            android:textSize="@dimen/dp_22" />
+
+        <TextView
+            android:id="@+id/tv_config_cloud_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_26"
+            android:text="@string/cloud_version"
+            android:textColor="@color/config_grey"
+            android:textSize="@dimen/dp_22" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_980"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_config_bottom_bg">
+
+        <ImageView
+            android:id="@+id/iv_config_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:src="@drawable/setting_icon_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_21"
+            android:layout_toRightOf="@id/iv_config_app_version"
+            android:text="@string/app_version"
+            android:textColor="@color/config_black"
+            android:textSize="@dimen/dp_22" />
+
+        <TextView
+            android:id="@+id/tv_config_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_26"
+            android:text="@string/app_version"
+            android:textColor="@color/config_grey"
+            android:textSize="@dimen/dp_22" />
+
+    </RelativeLayout>
+</LinearLayout>

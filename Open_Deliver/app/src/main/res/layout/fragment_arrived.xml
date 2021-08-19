@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SandglassView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_arrived"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pickup_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_arrived_location"
+            android:layout_width="453dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="827dp"
+            android:layout_marginTop="144dp"
+            android:gravity="center"
+            android:text="8201"
+            android:textColor="@color/white"
+            android:textSize="105dp" />
+
+        <TextView
+            android:id="@+id/tv_arrived_room"
+            android:layout_width="453dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_arrived_location"
+            android:layout_marginLeft="827dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="@string/arrived_room"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <TextView
+            android:id="@+id/tv_arrived_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_arrived_room"
+            android:layout_marginLeft="899dp"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/selector_orange_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/dp_23"
+            android:text="@string/open"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_arrived_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="@string/open_error"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_arrived_sandglass"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                SandglassView:center_drawable="@drawable/icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_46"
+                SandglassView:time="150" />
+
+            <TextView
+                android:id="@+id/tv_arrived_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/send_other_orders"
+                android:textColor="@color/sandglass_color"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_arrived_opening"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.slamtec.robot.deliver.customview.LoadingView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_248" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/ready_open"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_arrived_retrieve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_arrived_retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="483dp"
+            android:background="@drawable/selector_blue_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:text="@string/admin_retrieve"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+
+        <!--        <TextView
+                    android:id="@+id/tv_arrived_retrieve_tasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="337dp"
+                    android:gravity="center"
+                    android:text="@string/failed_tip"
+                    android:textColor="@color/white"
+                    android:textSize="48dp" />  -->
+        <TextView
+            android:id="@+id/tv_arrived_failed_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="337dp"
+            android:gravity="center"
+            android:text="@string/failed_tip"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </RelativeLayout>
+</RelativeLayout>

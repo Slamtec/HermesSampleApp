@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:background="@drawable/shape_cargo_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_35"
+        android:text="@string/takeout_box"
+        android:textColor="@color/config_black"
+        android:textSize="@dimen/dp_28" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_67"
+        android:orientation="horizontal">
+
+        <com.slamtec.robot.deliver.customview.BoxView
+            android:id="@+id/bv_cargo_open1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_box_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/back_homepage"
+            android:textColor="@color/text_blue"
+            android:visibility="gone"
+            android:textSize="35dp" />
+
+        <com.slamtec.robot.deliver.customview.BoxView
+            android:id="@+id/bv_cargo_open2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_91"
+            android:background="@drawable/shape_box_bg"
+            android:gravity="center_horizontal"
+            android:text="@string/back_homepage"
+            android:visibility="gone"
+            android:textColor="@color/text_blue"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

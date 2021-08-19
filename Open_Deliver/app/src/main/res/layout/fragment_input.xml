@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SandglassView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/input_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_input_no_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="337dp"
+            android:text="@string/no_box"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <TextView
+            android:id="@+id/tv_input_no_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp"
+            android:background="@drawable/selector_distribute_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="@string/back_homepage"
+            android:textColor="@color/text_blue"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1092dp"
+            android:layout_marginTop="54dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_input_sandglass"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                SandglassView:center_drawable="@drawable/hs_icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_56"
+                SandglassView:time="120" />
+
+            <TextView
+                android:id="@+id/tv_input_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text="01:28"
+                android:textColor="@color/sandglass_color"
+                android:textSize="42dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/selector_home_bg"
+            android:paddingLeft="63dp"
+            android:paddingTop="23dp"
+            android:text="@string/homepage"
+            android:textColor="@drawable/selector_button_color"
+            android:textSize="35dp" />
+
+        <com.slamtec.robot.deliver.customview.NumberKeyboardView
+            android:id="@+id/nkv_number_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="835dp"
+            android:layout_marginTop="150dp" />
+
+        <LinearLayout
+            android:layout_width="835dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="251dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.slamtec.robot.deliver.customview.RoomNumberView
+                android:id="@+id/rnv_roomnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_number_tip"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/room_number_tip"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_config"
+        android:layout_width="@dimen/dp_207"
+        android:layout_height="@dimen/dp_74"
+        android:background="@drawable/setting_nav_menu_bg">
+
+        <ImageView
+            android:id="@+id/iv_setting_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/setting_nav_administration_on" />
+
+        <TextView
+            android:id="@+id/tv_setting_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toRightOf="@id/iv_setting_config"
+            android:text="@string/setting_config"
+            android:textColor="@color/text_blue_setting"
+            android:textSize="@dimen/dp_20" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_cargo"
+        android:layout_width="@dimen/dp_207"
+        android:layout_height="@dimen/dp_74"
+        android:layout_marginTop="@dimen/dp_17"
+        android:background="@drawable/setting_nav_menu_bg">
+
+        <ImageView
+            android:id="@+id/iv_setting_cargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/setting_nav_open_on" />
+
+        <TextView
+            android:id="@+id/tv_setting_cargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toRightOf="@id/iv_setting_cargo"
+            android:text="@string/setting_cargo"
+            android:textColor="@color/text_blue_setting"
+            android:textSize="@dimen/dp_20" />
+    </RelativeLayout>
+</LinearLayout>

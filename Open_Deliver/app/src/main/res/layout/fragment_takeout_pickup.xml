@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SandglassView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_takeout_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pickup_bg"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="985dp"
+            android:layout_marginTop="400dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_takeout_pickup_sandglass"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                SandglassView:center_drawable="@drawable/icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_46"
+                SandglassView:time="150" />
+
+            <TextView
+                android:id="@+id/tv_takeout_pickup_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="02:28"
+                android:textColor="@color/sandglass_color"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_takeout_pickup_location"
+            android:layout_width="453dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="827dp"
+            android:layout_marginTop="144dp"
+            android:gravity="center"
+            android:text="8201"
+            android:textColor="@color/white"
+            android:textSize="105dp" />
+
+        <TextView
+            android:layout_width="453dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="827dp"
+            android:layout_marginTop="293dp"
+            android:gravity="center"
+            android:text="@string/pickup"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <TextView
+            android:id="@+id/tv_takeout_pickup_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="899dp"
+            android:layout_marginTop="454dp"
+            android:background="@drawable/selector_green_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="22dp"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_takeout_pickup_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_51"
+            android:layout_marginTop="@dimen/dp_152"
+            android:visibility="gone"
+            android:background="@drawable/opendoor_info_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_takeout_pickup_error_tip"
+                android:layout_width="596dp"
+                android:layout_height="112dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="22dp"
+                android:text="@string/pickup_error_tip"
+                android:textColor="@color/text_black_tip"
+                android:textSize="28dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl_takeout_pickup_closing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.slamtec.robot.deliver.customview.LoadingView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_248" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/ready_close"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_takeout_pickup_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="@string/take_error"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_takeout_pickup_error_sandglass"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                SandglassView:center_drawable="@drawable/icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_46"
+                SandglassView:time="150" />
+
+            <TextView
+                android:id="@+id/tv_takeout_pickup_error_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/send_other_orders"
+                android:textColor="@color/sandglass_color"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_takeout_pickup_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/breakdown_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="@string/pickup_finish"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_takeout_pickup_finish_sandglass"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                SandglassView:center_drawable="@drawable/icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_46"
+                SandglassView:time="150" />
+
+            <TextView
+                android:id="@+id/tv_takeout_pickup_finish_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/send_other_orders"
+                android:textColor="@color/sandglass_color"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

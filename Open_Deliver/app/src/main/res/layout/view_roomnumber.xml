@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_room_1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_default"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tv_room_2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_default"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tv_room_3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_default"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tv_room_4"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_default"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tv_room_5"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_default"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:textSize="55dp" />
+</LinearLayout>

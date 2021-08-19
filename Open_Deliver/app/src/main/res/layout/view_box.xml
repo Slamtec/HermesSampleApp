@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_box_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_box_blue_bg">
+
+            <TextView
+                android:id="@+id/tv_box_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="8801"
+                android:textColor="@color/white"
+                android:textSize="48dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_box_white" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_box_bottom_bg">
+
+            <TextView
+                android:id="@+id/tv_box_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/selector_box_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="@string/open"
+                android:textColor="@color/white"
+                android:textSize="26dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/v_box_shade"
+        android:layout_width="298dp"
+        android:layout_height="356dp"
+        android:visibility="gone"
+        android:background="@drawable/shape_box_shade" />
+
+    <com.slamtec.robot.deliver.customview.LoadingView
+        android:id="@+id/lv_box_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_60" />
+
+    <TextView
+        android:id="@+id/tv_box_loading_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_144"
+        android:visibility="gone"
+        android:text="@string/please_wait"
+        android:textColor="@color/circle_color"
+        android:textSize="@dimen/dp_24" />
+</FrameLayout>

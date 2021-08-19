@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/transparent" />
+    <corners android:radius="12dp" />
+    <size
+        android:width="238dp"
+        android:height="238dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/refill_box_orange"
+        android:dashWidth="5dp"
+        android:dashGap="5dp" />
+</shape>

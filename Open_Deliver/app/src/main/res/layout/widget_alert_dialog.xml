@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_confirm"
+    android:layout_width="540dp"
+    android:layout_height="288dp"
+    android:background="@drawable/shape_alert_dialog">
+
+
+    <TextView
+        android:id="@+id/tv_alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/alert_title"
+        android:textColor="@color/black"
+        android:textSize="34dp" />
+
+
+    <TextView
+        android:id="@+id/tv_alert_tip"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_alert_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/alert_tip"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <View
+        android:id="@+id/v_alert_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/blue_line" />
+
+    <TextView
+        android:id="@+id/tv_alert_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/alert_confirm"
+        android:textColor="@color/blue_text"
+        android:layout_below="@id/v_alert_view"
+        android:layout_marginTop="25dp"
+        android:textSize="34dp" />
+
+
+</RelativeLayout>

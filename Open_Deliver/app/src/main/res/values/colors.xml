@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_black_tip">#FF303030</color>
+    <color name="box_shade">#66AFAFAF</color>
+    <color name="alert_bg">#D3FFFFFF</color>
+    <color name="dialog_bg">#CDFFFFFF</color>
+    <color name="blur_bg">#ADFFFFFF</color>
+    <color name="dialog_line">#19000000</color>
+    <color name="blue">#FF6381FF</color>
+    <color name="blue_text">#FF007AFF</color>
+    <color name="blue_line">#FF0000EA</color>
+    <color name="text_blue">#FF347BF1</color>
+    <color name="text_grey_dialog">#FF7B7B7B</color>
+    <color name="text_red">#FFFF0000</color>
+    <color name="text_black">#FF1A2C3F</color>
+    <color name="sandglass_color">#FFFDC392</color>
+    <color name="cargo_grey_color">#FFEFEFEF</color>
+    <color name="cargo_blue_color">#FF638EFF</color>
+    <color name="cargo_orange_color">#FFFF8E5D</color>
+    <color name="box_yellow">#FFF9D780</color>
+    <color name="box_blue">#FFCEE2F0</color>
+    <color name="box_grey">#FFD8D8D8</color>
+    <color name="text_grey">#FFB2B2B2</color>
+    <color name="wifi_text_grey">#FFB4B4B4</color>
+    <color name="text_blue_setting">#FF217AF9</color>
+    <color name="transparent">#00000000</color>
+    <color name="config_bg">#FFFBFBFE</color>
+    <color name="config_black">#FF303030</color>
+    <color name="config_grey">#FFA3A8B7</color>
+    <color name="edit_line">#FF888888</color>
+    <color name="menu_line">#FFCACCD4</color>
+    <color name="menu_bg">#FFF9F9F9</color>
+    <color name="wifi_button_bg">#FFCACCD4</color>
+    <color name="wifi_button_text">#FFFF6600</color>
+    <color name="setting_back_color">#FF99C9FF</color>
+    <color name="grey_bg">#FFF5F5F5</color>
+    <color name="hint">#FF999999</color>
+    <color name="circle_color">#FF343EDF</color>
+    <color name="arc_color">#FF6B68F8</color>
+    <!--selector color-->
+    <color name="selector_white">#FFFFFFFF</color>
+    <color name="selector_blue">#FF6381FF</color>
+    <color name="battery_green">#FF00ff00</color>
+
+    <!--补仓-->
+    <color name="home_text_color">#FF05447C</color>
+    <color name="refill_text_black">#FF242E42</color>
+    <color name="refill_text_blue">#FF638EFF</color>
+    <color name="menu_bar_bg_blue">#FF547CFD</color>
+    <color name="refill_box_yellow">#A8F3E116</color>
+    <color name="refill_box_orange">#A8FFB300</color>
+    <color name="refill_box_red">#A8F3651F</color>
+    <color name="refill_box_green">#A8AFD279</color>
+    <color name="refill_box_cyan">#A800B383</color>
+    <color name="refill_box_text_yellow">#FFF3E116</color>
+    <color name="refill_box_text_orange">#FFFFB300</color>
+    <color name="refill_box_text_red">#FFF3651F</color>
+    <color name="refill_box_text_green">#FFAFD279</color>
+    <color name="refill_box_text_cyan">#FF00B383</color>
+    <color name="refill_red">#FFFF0000</color>
+    <color name="refill_text_orange">#FFFF6600</color>
+    <color name="refill_input_black">#FF1A2C3F</color>
+    <color name="refill_black">#FF222222</color>
+    <color name="refill_sku_indicator_blue">#FF638EFF</color>
+    <color name="refill_sku_indicator_blue_light">#FFD3DEFF</color>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+

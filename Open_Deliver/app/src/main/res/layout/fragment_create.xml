@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/breakdown_bg">
+
+    <LinearLayout
+        android:id="@+id/rl_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.slamtec.robot.deliver.customview.LoadingView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_248" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/create_order"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_order_retrieve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="205dp"
+            android:text="@string/order_failed"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <com.slamtec.robot.deliver.customview.BoxView
+                android:id="@+id/bv_create_retrieve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:gravity="center_horizontal"
+                android:text="@string/back_homepage"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_second_order_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="@string/second_create_order_failed"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <TextView
+            android:id="@+id/tv_create_second_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp"
+            android:background="@drawable/selector_distribute_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="@string/confirm"
+            android:textColor="@color/text_blue"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_order_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="337dp"
+            android:text="@string/retry_create_order"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp">
+
+            <TextView
+                android:id="@+id/tv_create_order_failed_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_distribute_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="@string/back_homepage"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/tv_create_order_failed_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_distribute_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="@string/retry_order"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

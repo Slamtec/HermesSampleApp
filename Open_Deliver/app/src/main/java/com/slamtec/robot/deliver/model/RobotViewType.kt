@@ -1,0 +1,8 @@
+package com.slamtec.robot.deliver.model
+
+enum class RobotViewType {
+    HOME, LOW_BATTERY,INPUT, OPEN, CLOSE, PINCH_ERROR,CREATE, SEND, DELIVER, GOING_HOME,ARRIVED,  TAKEOUT_PICKUP,ERROR, ERROR_RETRIEVE,RETRIEVE, SETTING
+}
+
+
+

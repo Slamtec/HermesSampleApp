@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SandglassView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/put_bg">
+
+    <LinearLayout
+        android:id="@+id/rl_sync_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/breakdown_bg"
+        android:visibility="gone">
+
+        <com.slamtec.robot.deliver.customview.LoadingView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_248" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/sync_order"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1092dp"
+            android:layout_marginTop="54dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.slamtec.robot.deliver.customview.SandglassView
+                android:id="@+id/sv_send_sandglass"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                SandglassView:center_drawable="@drawable/hs_icon_waiting"
+                SandglassView:lineColor="@color/sandglass_color"
+                SandglassView:size="@dimen/dp_56"
+                SandglassView:time="120" />
+
+            <TextView
+                android:id="@+id/tv_send_sandglass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text="01:28"
+                android:textColor="@color/sandglass_color"
+                android:textSize="42dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_send_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/selector_cancel_bg"
+            android:paddingLeft="63dp"
+            android:paddingTop="23dp"
+            android:text="@string/back"
+            android:textColor="@drawable/selector_button_color"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tv_put_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="87dp"
+            android:background="@drawable/selector_home_bg"
+            android:paddingLeft="63dp"
+            android:paddingTop="23dp"
+            android:text="@string/lock_screen"
+            android:textColor="@drawable/selector_button_color"
+            android:textSize="35dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_put_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="307dp"
+            android:text="@string/put_package"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp">
+
+            <TextView
+                android:id="@+id/tv_send_second_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_distribute_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="@string/create_second_order"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_distribute_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:text="@string/distribute"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_send_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="205dp"
+            android:text="@string/sync_order_failed"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <com.slamtec.robot.deliver.customview.BoxView
+                android:id="@+id/bv_send_retrieve1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:gravity="center_horizontal"
+                android:text="@string/back_homepage"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+
+            <com.slamtec.robot.deliver.customview.BoxView
+                android:id="@+id/bv_send_retrieve2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_91"
+                android:layout_marginTop="300dp"
+                android:gravity="center_horizontal"
+                android:text="@string/back_homepage"
+                android:textColor="@color/text_blue"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rl_send_closing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.slamtec.robot.deliver.customview.LoadingView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_248" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/ready_close"
+            android:textColor="@color/white"
+            android:textSize="48dp" />
+    </LinearLayout>
+
+</RelativeLayout>

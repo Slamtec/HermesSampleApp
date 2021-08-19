@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/failed_dialog_confirm"
+    android:layout_width="@dimen/dp_540"
+    android:layout_height="@dimen/dp_288"
+    android:background="@color/transparent">
+
+    <com.slamtec.robot.deliver.customview.RoundRectBlurView
+        android:id="@+id/bv"
+        android:layout_width="@dimen/dp_540"
+        android:layout_height="@dimen/dp_288"
+        app:realtimeBlurRadius="10dp"
+        app:realtimeDownsampleFactor="4"
+        app:realtimeOverlayColor="@color/blur_bg"
+        app:xRadius="@dimen/dp_24"
+        app:yRadius="@dimen/dp_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/alert_title"
+        android:textColor="@color/black"
+        android:textSize="34dp" />
+
+    <TextView
+        android:id="@+id/tv_alterable_content"
+        android:layout_width="400dp"
+        android:layout_height="@dimen/dp_196"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/create_order_failed"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+
+    <View
+        android:id="@+id/v_alterable_confirm_view"
+        android:layout_width="@dimen/dp_540"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_200"
+        android:background="@color/blue_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_87"
+        android:layout_below="@id/v_alterable_confirm_view">
+
+        <TextView
+            android:id="@+id/tv_alterable_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/dp_34" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

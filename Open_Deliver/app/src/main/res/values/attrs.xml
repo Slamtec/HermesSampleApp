@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SandglassView">
+        <attr name="lineColor" format="color" />
+        <attr name="time" format="integer" />
+        <attr name="size" format="dimension" />
+        <attr name="center_drawable" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BatteryView">
+        <attr name="batteryColor" format="color" />
+        <attr name="distance" format="dimension" />
+        <attr name="batteryHeight" format="dimension" />
+        <attr name="batteryWidth" format="dimension" />
+        <attr name="batteryRadius" format="dimension" />
+        <attr name="backgroundDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BoxLoadingView">
+        <attr name="circleColor" format="color" />
+        <attr name="arcColor" format="color" />
+        <attr name="innerCircleRadius" format="dimension" />
+        <attr name="outCircleRadius" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="circleWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BoxViewEmpty">
+        <attr name="boxId" format="string" />
+        <attr name="boxTextColor" format="color" />
+        <attr name="boxTextSize" format="dimension" />
+        <attr name="shadeWidth" format="dimension" />
+        <attr name="shadeColor" format="color" />
+        <attr name="leftMargin" format="dimension" />
+        <attr name="topMargin" format="dimension" />
+        <attr name="shadeHeight" format="dimension" />
+        <attr name="iconDrawable" format="reference" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProductBackgroundView">
+        <attr name="boxShadeWidth" format="dimension" />
+        <attr name="pressedShadeWidth" format="dimension" />
+        <attr name="boxShadeColor" format="color" />
+        <attr name="boxLeftMargin" format="dimension" />
+        <attr name="boxTopMargin" format="dimension" />
+        <attr name="boxShadeHeight" format="dimension" />
+        <attr name="pressedShadeHeight" format="dimension" />
+        <attr name="boxCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ProductView">
+        <attr name="productName" format="string" />
+        <attr name="productTextColor" format="color" />
+        <attr name="productTextSize" format="dimension" />
+        <attr name="productLeftMargin" format="dimension" />
+        <attr name="productTopMargin" format="dimension" />
+        <attr name="productIconDrawable" format="reference" />
+        <attr name="productShadeDrawable" format="reference" />
+        <attr name="productShadeWidth" format="dimension" />
+        <attr name="productShadeHeight" format="dimension" />
+        <attr name="productIconMarginTop" format="dimension" />
+        <attr name="productTextMarginTop" format="dimension" />
+        <attr name="productCornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RefillBoxView">
+        <attr name="refillBoxId" format="string" />
+        <attr name="refillBoxIdTextColor" format="color" />
+        <attr name="refillBoxBackgroundEmpty" format="reference" />
+        <attr name="refillBoxBackgroundSku" format="reference" />
+    </declare-styleable>
+</resources>

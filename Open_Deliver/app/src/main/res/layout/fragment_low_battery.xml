@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/put_bg">
+
+    <TextView
+        android:id="@+id/tv_low_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/low_battery"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_42" />
+
+    <TextView
+        android:id="@+id/tv_low_battery_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_400"
+        android:background="@drawable/selector_distribute_bg"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="@string/back_homepage"
+        android:textColor="@color/text_blue"
+        android:textSize="35dp" />
+</RelativeLayout>
