@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <include
+        android:id="@+id/layout_robot"
+        layout="@layout/layout_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="81dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close_1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/closed"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="@+id/layout_robot" />
+
+    <ImageView
+        android:id="@+id/iv_close_2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/closed"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="@+id/layout_robot" />
+
+    <ImageView
+        android:id="@+id/iv_close_3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/closed"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="@+id/layout_robot" />
+
+    <ImageView
+        android:id="@+id/iv_close_4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/closed"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="@+id/layout_robot" />
+
+
+    <ImageView
+        android:id="@+id/iv_fake"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/setting_bg"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/iv_fake"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="11dp"
+                android:text="返回"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="11dp"
+                android:text="设置"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="616dp"
+        android:layout_height="492dp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/select_table_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_robot"
+        app:layout_constraintLeft_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="@id/layout_robot">
+
+        <TextView
+            android:id="@+id/tv_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="25dp"
+            android:text="请选择餐桌号"
+            android:textColor="@color/selected_text_color"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_choose" />
+
+        <TextView
+            android:id="@+id/start_move"
+            android:layout_width="255dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/deliver_btn"
+            android:gravity="center"
+            android:text="小岚快出发吧！"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_execute_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_execute_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:text="放心吧，小岚一定使命必达~"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

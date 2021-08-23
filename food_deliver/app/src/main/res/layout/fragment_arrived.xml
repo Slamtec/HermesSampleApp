@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/tip_dialog"
+        android:paddingLeft="36dp"
+        android:paddingTop="1dp"
+        android:text="我是小岚，您的智能\n餐厅机器人，很高兴\n为您服务"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/layout_robot"
+        layout="@layout/layout_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_food"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="159dp"
+        android:src="@drawable/food02"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/white_oval"
+        app:layout_constraintBottom_toBottomOf="@id/iv_food"
+        app:layout_constraintLeft_toLeftOf="@id/iv_food"
+        app:layout_constraintRight_toRightOf="@id/iv_food"
+        app:layout_constraintTop_toTopOf="@id/iv_food" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="已到达送餐点"
+        android:textColor="#333"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_detail"
+        app:layout_constraintRight_toRightOf="@id/iv_detail"
+        app:layout_constraintTop_toTopOf="@id/iv_detail" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:text="请取2L"
+        android:textColor="#ED960C"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_detail"
+        app:layout_constraintRight_toRightOf="@id/iv_detail"
+        app:layout_constraintTop_toTopOf="@id/iv_detail" />
+
+    <TextView
+        android:id="@+id/count_down_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:text="倒计时：01:59"
+        android:textColor="#ED960C"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_detail"
+        app:layout_constraintRight_toRightOf="@id/iv_detail"
+        app:layout_constraintTop_toTopOf="@id/iv_detail" />
+
+    <TextView
+        android:id="@+id/tv_have_taken"
+        android:layout_width="255dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/deliver_btn"
+        android:gravity="center"
+        android:text="我已取餐，谢谢小岚"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_food"
+        app:layout_constraintRight_toRightOf="@id/iv_food"
+        app:layout_constraintTop_toBottomOf="@id/iv_food" />
+</androidx.constraintlayout.widget.ConstraintLayout>

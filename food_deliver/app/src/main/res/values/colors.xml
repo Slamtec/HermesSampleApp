@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorItemDefault">#629dd1</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorRecycler">#ffffff</color>
+    <color name="keyboardColor">#7f8fa9</color>
+    <color name="battery_green">#FF00ff00</color>
+    <color name="plate_grey">#d7d7d7</color>
+    <color name="plate_text_color">#182A41</color>
+    <color name="selected_text_color">#10b7eb</color>
+    <color name="item_table_unselected_text_color">#748A9D</color>
+</resources>

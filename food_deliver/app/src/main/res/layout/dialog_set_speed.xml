@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_double_btn_bg">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="681dp"
+        android:layout_height="45dp"
+        android:background="#10B7EB"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="调节速度"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="102dp"
+        android:text="小岚当前速度: "
+        android:textColor="#10B7EB"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_current_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="102dp"
+        android:text="1.0m/s"
+        android:textColor="#646666"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_speed_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_set_speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="150dp"
+        android:text="请设置新的速度(最小不低于0.2，最高不低于0.7): "
+        android:textColor="#10B7EB"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="148dp"
+        android:inputType="numberDecimal"
+        android:textColor="#646666"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_set_speed_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:textColor="#333333"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="254dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/deliver_btn_click"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="254dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/deliver_btn_click"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryView">
+        <attr name="batteryColor" format="color" />
+        <attr name="distance" format="dimension" />
+        <attr name="batteryHeight" format="dimension" />
+        <attr name="batteryWidth" format="dimension" />
+        <attr name="batteryRadius" format="dimension" />
+        <attr name="backgroundDrawable" format="reference" />
+    </declare-styleable>
+</resources>

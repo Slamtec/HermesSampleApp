@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_food"
+        android:layout_width="364dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="159dp"
+        android:src="@drawable/food02"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_fake"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_setting"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/setting_bg"
+        app:layout_constraintLeft_toRightOf="@+id/iv_fake"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/set"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/tip_dialog"
+        android:paddingLeft="36dp"
+        android:paddingTop="1dp"
+        android:text="我是小岚，您的智能\n餐厅机器人，很高兴\n为您服务"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/layout_robot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/layout_robot"
+        layout="@layout/layout_robot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deliver_again"
+        android:layout_width="241dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/deliver_again_bg"
+        android:gravity="center"
+        android:text="再次配送"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_food"
+        app:layout_constraintRight_toLeftOf="@id/deliver"
+        app:layout_constraintTop_toBottomOf="@+id/iv_food" />
+
+    <TextView
+        android:id="@+id/deliver"
+        android:layout_width="241dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/deliver_btn_bg"
+        android:gravity="center"
+        android:text="我要配送"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toRightOf="@+id/deliver_again"
+        app:layout_constraintRight_toRightOf="@id/iv_food"
+        app:layout_constraintTop_toBottomOf="@+id/iv_food" />
+</androidx.constraintlayout.widget.ConstraintLayout>
